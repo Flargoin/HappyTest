@@ -90,7 +90,7 @@ ul {
 }
 
 svg .circle-gray {
-	fill: none;
+	fill: transparent;
 	stroke: #ececec;
 	stroke-width: 7;
 	stroke-dasharray: 612 78;
@@ -98,34 +98,46 @@ svg .circle-gray {
 	stroke-linecap: round;
 }
 
-svg .circle-green {
-	fill: none;
-	stroke: #70a84b;
-	stroke-width: 7;
-	stroke-dasharray: 0 648;
-	stroke-dashoffset: 90;
-	stroke-linecap: round;
-	transition: 1s all;
+.green {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transform: rotate(-69deg);
 }
 
+svg .circle-green {
+	fill: transparent;
+	stroke: #70a84b;
+	stroke-width: 7;
+	stroke-dasharray: 0 690;
+	stroke-dashoffset: 0;
+	stroke-linecap: round;
+	transition: 2s all;
+}
+
+.yellow {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	z-index: 10;
+	transform: rotate(-69deg);
+}
 svg .circle-yellow {
-	position: relative;
-	fill: none;
+	fill: transparent;
 	stroke: #fcd329;
 	stroke-width: 7;
-	stroke-dasharray: 0 648;
-	stroke-dashoffset: 90;
+	stroke-dasharray: 0 690;
+	stroke-dashoffset: 0;
 	stroke-linecap: round;
-	transition: 1s all;
-	z-index: 10;
+	transition: 2s all;
 }
 
 svg .circle-green--active {
-	stroke-dasharray: 392 256;
+	stroke-dasharray: 390 300;
 }
 
 svg .circle-yellow--active {
-	stroke-dasharray: 176 472;
+	stroke-dasharray: 220 470;
 }
 
 .test__card-img {
