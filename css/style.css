@@ -133,7 +133,7 @@ svg .circle-yellow {
 }
 
 svg .circle-green--active {
-	stroke-dasharray: 390 300;
+	stroke-dasharray: 430 260;
 }
 
 svg .circle-yellow--active {
